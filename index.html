@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <title>:)</title>
+
+    <script>
+        alert('Halo mbak wkwk....');
+        alert('Aku mau bilang sesuatu....');
+        alert('I love you Donald ❤💕');
+        alert('Dan ini hanya untuk mu 🥰, Love you yang :)')
+    </script>
+</head>
+<body>
+    <div class="container">
+        <p class="title" data-aos="fade-down">Love You Donald :)</p>
+        <div class="heart"></div>
+        <button class="tombol" onclick="showAlert()">Klik aku juga :)</button>
+        <p class="title" id="hasil"></p>
+    </div>
+</body>
+<script>AOS.init();</script>
+<script>
+    function showAlert() {
+    let text = "Sayang..kamu sayang aku kan?\nKlik OK untuk iya atau Cancel untuk tidak.";
+    if (confirm(text) == true) {
+        text = "Love you too yang 💕";
+    } else {
+        text = "Anak anying mu wkwk";
+    }
+    document.getElementById("hasil").innerHTML = text;
+}
+</script>
+</html>
